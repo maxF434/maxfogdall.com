@@ -35,7 +35,7 @@ function calc(){
     factor = (total) / 100;
     per = totalSec / factor;
     per = per.toFixed(7);
-    document.getElementById("progress").innerHTML = "We are " + per + "% Through the Year and I have indeed completed " + per + "% of my new years resolutions!";
+    document.getElementById("progress").innerHTML = "We are " + per + "% through the year, and I have indeed completed " + per + "% of my new years resolutions!";
 }
 
 
