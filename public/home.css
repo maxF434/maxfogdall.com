@@ -1,0 +1,48 @@
+#container {
+  text-align: center;
+  -ms-text-justify: distribute-all-lines;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 200px;
+  margin: 30px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-radius: 5%;
+}
+
+body {
+  background-color: #222222;
+}
+
+#progress {
+  color:rgb(224, 224, 224);
+}
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.box3 {
+  background: #ddad45
+}
+
+.box4 {
+  background: rgb(81, 161, 226)
+}
+
+.box1 {
+  background: rgb(226, 115, 81)
+}
+
+.box2 {
+  background: rgb(81, 226, 105)
+}
+

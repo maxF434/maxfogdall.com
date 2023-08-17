@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Greatest Website in the History of the Internet</title>
+</head>
+<body>
+
+<div id="container">
+    <h1 style="text-align: center; color:rgb(224, 224, 224)">Max Fogdall's Portfolio</h1>
+    <h2 style="text-align: center; color:rgb(224, 224, 224);">Based in Williamston, Michigan</h2>
+
+    <div class="box1">
+    <p>-Stuff I Made-</p>
+    <a href="https://brookss.itch.io/fancy-physics-v10">Physics Sandbox</a>
+    <br>
+    <a href="https://charged-formula-393221.rj.r.appspot.com/">Historical Elections</a>
+    <br>
+    <a href="https://twitter.com/KennyLeeHills">Twitter Bot #1</a>
+
+    <p></p>
+    </div>
+
+    <div class="box2">
+        <p>-Guitars-</p>
+        <a href="https://www.epiphone.com/en-US/Electric-Guitar/EPIQGY439/Vintage-Cherry-Satin">Epiphone SG</a>
+        <br>
+        <a href="https://www.fender.com/en-US/acoustic-guitars/other/fa-15-34-steel/0971170170.html">Fender Acoustic</a>
+        <br>
+        <a href="https://www.fender.com/en-US/acoustic-guitars/other/fa-15-34-steel/0971170192.html">Cameo Acoustic</a>
+    
+        <p></p>
+        </div>
+
+    <div class="box3">
+        <p>-Computer parts-</p>
+        <a href="https://www.evga.com/products/productlist.aspx?type=0&family=GeForce+20+Series+Family&chipset=RTX+2060">Graphics Card: RTX 2060</a>
+        <br>
+        <a href="https://www.amazon.com/AMD-Ryzen-3600-12-Thread-Processor/dp/B07STGGQ18">Processor: Ryzen 3600</a>
+        <br>
+        <a href="https://www.amazon.com/G-SKILL-Ripjaws-PC4-25600-3200MHz-F4-3200C16D-16GVKB/dp/B015FXXBW0">Memory: 16 GB</a>
+        
+        <p></p>
+    </div>
+
+    <div class="box4">
+        <p>-Interests-</p>
+        <p>History</p>
+        <p>Technology</p>
+        <p>Music</p>
+        
+    </div>
+
+    <p id="progress"></p>
+    
+
+</div>
+
+<div  id="messagebox"  onsubmit="return false;">
+    <form name = "box" action="">
+        <input maxlength = "30" placeholder="Display name (optional)"  size="25" type=”reset” id="name" name="name" value=""><br>
+        <textarea maxlength = "400" placeholder="Say something.." style="resize:none; height: 100px; width: 400px" type="text" id="body" name="body" value=""></textarea><br><br>
+    </form>
+    <button   id="submit" onclick="submit()">Submit</button>
+
+    <div id="posts">
+
+    </div>
+
+    <script src="/home.app.js"></script>
+</div>
+
+</body>
+</html>

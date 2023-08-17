@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Historical Presidential Elections and Online Polls</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    </head>
+    <body>
+    <script defer src="/main.js"></script>
+    </script>
+      <p id="demo"></p>
+      <p id="intro">Select a candiate, your vote will be publicly logged in  each poll.</p>
+      <script src="https://kihtrak.com/cloud_variable/cloudify.min.js"></script>
+
+
+  <div id="elections">
+    <p>1788: General George Washington was elected for two terms and ran mostly unopposed.</p>
+      <div id = electionof1796> 
+          <p>1796</p>
+          <button id="JA1796" onclick="voteTwoWay('election1796', 'John Adams', 'JA1796', 'TJ1796', 'Federalist', 0)">John Adams</button>
+          <button id="TJ1796" onclick="voteTwoWay('election1796', 'Thomas Jefferson', 'TJ1796', 'JA1796', 'Democratic-Republican', 0)">Thomas Jefferson</button>
+        <p id = "space"></p>
+          <table cellspacing="0" id="1796">
+              <tr>
+                  <th>Candidate</th>
+                <th>Electoral</th>
+                <th>Popular</th>
+                <th>Your Votes</th>
+              </tr>
+              <tr>
+                  <th>John Adams✔️</th>
+                  <td>71</td>
+                <td>35,726</td>
+                <td id="votesJA1796"></td>
+              </tr>
+              <tr>
+                  <th>Thomas Jefferson</th>
+                  <td>68</td>
+                <td>31,115</td>
+                <td id="votesTJ1796"></td>
+              </tr>
+            </table>
+      </div>
+      <p>1800</p>
+      <div id = electionof1800>
+      <button id="TJ1800" onclick="voteThreeWay('election1800', 'Thomas Jefferson', 'TJ1800', 'JA1800', 'AB1800', 'Democratic-Republican', 1)">Thomas Jefferson</button>
+      <button id="AB1800" onclick="voteThreeWay('election1800', 'Aaron Burr', 'AB1800', 'TJ1800', 'JA1800', 'Democratic-Republican', 1)">Aaron Burr</button>
+      <button id="JA1800" onclick="voteThreeWay('election1800', 'John Adams', 'JA1800', 'AB1800', 'TJ1800', 'Federalist', 1)">John Adams</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1800">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Thomas Jefferson✔️</th>
+            <td>73</td>
+          <td>45,467</td>
+          <td id="votesTJ1800"></td>
+        </tr>
+        <tr>
+          <th>Aaron Burr</th>
+          <td>73</td>
+        <td>-</td>
+        <td id="votesAB1800"></td>
+      </tr>
+        <tr>
+            <th>John Adams</th>
+            <td>65</td>
+          <td>29,621</td>
+          <td id="votesJA1800"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1804</p>
+      <div id = electionof1804>
+      <button id="TJ1804" onclick="voteTwoWay('election1804', 'Thomas Jefferson', 'TJ1804', 'CP1804', 'Democratic-Republican', 2)">Thomas Jefferson</button>
+      <button id="CP1804" onclick="voteTwoWay('election1804', 'Charles Pinckney', 'CP1804', 'TJ1804', 'Federalist', 2)">Charles C. Pinckney</button>
+    <p id = "space"></p>
+      <table cellspacing="0" cellspacing="0" id="1804">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Thomas Jefferson✔️</th>
+            <td>162</td>
+          <td>104,110</td>
+          <td id="votesTJ1804"></td>
+        </tr>
+        <tr>
+            <th>Charles C. Pinckney</th>
+            <td>14</td>
+          <td>38,919</td>
+          <td id="votesCP1804"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1808</p>
+      <div id = electionof1808>
+      <button id="JM1808" onclick="voteTwoWay('election1808', 'James Madison', 'JM1808', 'CP1808', 'Democratic-Republican', 3)">James Madison</button>
+      <button id="CP1808" onclick="voteTwoWay('election1808', 'Charles Pinckney', 'CP1808', 'JM1808', 'Federalist', 3)">Charles C. Pinckney</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1808">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James Madison✔️</th>
+            <td>122</td>
+          <td>124,732</td>
+          <td id="votesJM1808"></td>
+        </tr>
+        <tr>
+            <th>Charles C. Pinckney</th>
+            <td>47</td>
+          <td>62,431</td>
+          <td id="votesCP1808"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1812</p>
+      <div id = electionof1812>
+      <button id="JM1812" onclick="voteTwoWay('election1812', 'James Madison', 'JM1812', 'DC1812', 'Democratic-Republican', 4)">James Madison</button>
+      <button id="DC1812" onclick="voteTwoWay('election1812', 'DeWit Clinton', 'DC1812', 'JM1812', 'Federalist', 4)">DeWit Clinton</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1812">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James Madison✔️</th>
+            <td>128</td>
+          <td>140,431</td>
+          <td id="votesJM1812"></td>
+        </tr>
+        <tr>
+            <th>DeWit Clinton</th>
+            <td>89</td>
+          <td>132,781</td>
+          <td id="votesDC1812"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1816</p>
+      <div id = electionof1816>
+      <button id="JM1816" onclick="voteTwoWay('election1816', 'DeWit Clinton', 'JM1816', 'RK1816', 'Democratic-Republican', 5)">James Monroe</button>
+      <button id="RK1816" onclick="voteTwoWay('election1816', 'Rufus King', 'RK1816', 'JM1816', 'Democratic-Republican', 5)">Rufus King</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1816">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James Monroe✔️</th>
+            <td>183</td>
+          <td>76,592</td>
+          <td id="votesJM1816"></td>
+        </tr>
+        <tr>
+            <th>Rufus King</th>
+            <td>34</td>
+          <td>34,740</td>
+          <td id="votesRK1816"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1820</p>
+      <div id = electionof1820>
+      <button id="JM1820" onclick="voteTwoWay('election1820', 'James Monroe', 'JM1820', 'JQ1820', 'Democratic-Republican', 6)">James Monroe</button>
+      <button id="JQ1820" onclick="voteTwoWay('election1820', 'John Quincy Adams', 'JQ1820', 'JM1820', 'Democratic-Republican', 6)">John Quincy Adams</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1820">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James Monroe✔️</th>
+            <td>231</td>
+          <td>87,343</td>
+          <td id="votesJM1820"></td>
+        </tr>
+        <tr>
+            <th>John Quincy Adams</th>
+            <td>0</td>
+          <td>-</td>
+          <td id="votesJQ1820"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1824</p>
+      <div id = electionof1824>
+      <button id="JQ1824" onclick="voteFourWay('election1824', 'John Quincy Adams', 'JQ1824', 'AJ1824', 'WC1824', 'HC1824', 'Democratic-Republican', 7)">John Quincy Adams</button>
+      <button id="AJ1824" onclick="voteFourWay('election1824', 'Andrew Jackson', 'AJ1824', 'JQ1824', 'WC1824', 'HC1824', 'Democratic-Republican', 7)">Andrew Jackson</button>
+      <button id="WC1824" onclick="voteFourWay('election1824', 'William Crawford', 'WC1824', 'JQ1824', 'AJ1824', 'HC1824', 'Democratic-Republican', 7)">William Crawford</button>
+      <button id="HC1824" onclick="voteFourWay('election1824', 'Henry Clay', 'HC1824', 'JQ1824', 'AJ1824', 'WC1824', 'Democratic-Republican', 7)">Henry Clay</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1824">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>John Quincy Adams✔️</th>
+            <td>84</td>
+          <td>113,122</td>
+          <td id="votesJQ1824"></td>
+        </tr>
+        <tr>
+            <th>Andrew Jackson</th>
+            <td>99</td>
+          <td>151,271</td>
+          <td id="votesAJ1824"></td>
+        </tr>
+        <tr>
+            <th>William Crawford</th>
+            <td>41</td>
+          <td>40,856</td>
+          <td id="votesWC1824"></td>
+        </tr>
+        <tr>
+          <th>Henry Clay</th>
+          <td>37</td>
+        <td>47,531</td>
+        <td id="votesHC1824"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1828</p>
+      <div id = electionof1828>
+      <button id="AJ1828" onclick="voteTwoWay('election1828', 'Andrew Jackson', 'AJ1828', 'JQ1828', 'Democrat', 8)">Andrew Jackson</button>
+      <button id="JQ1828" onclick="voteTwoWay('election1828', 'John Quincy Adams', 'JQ1828', 'AJ1828', 'National-Republican', 8)">John Quincy Adams</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1828">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Andrew Jackson✔️</th>
+            <td>178</td>
+          <td>638,348</td>
+          <td id="votesAJ1828"></td>
+        </tr>
+        <tr>
+            <th>John Quincy Adams</th>
+            <td>83</td>
+          <td>507,440</td>
+          <td id="votesJQ1828"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1832</p>
+      <div id = electionof1832>
+      <button id="AJ1832" onclick="voteFourWay('election1832', 'Andrew Jackson', 'AJ1832', 'HC1832', 'WW1832', 'JF1832', 'Democrat', 9)">Andrew Jackson</button>
+      <button id="HC1832" onclick="voteFourWay('election1832', 'Henry Clay', 'HC1832', 'AJ1832', 'WW1832', 'JF1832', 'National-Republican', 9)">Henry Clay</button>
+      <button id="WW1832" onclick="voteFourWay('election1832', 'William Wirt', 'WW1832', 'AJ1832', 'HC1832', 'JF1832', 'Anti-Masonic', 9)">William Wirt</button>
+      <button id="JF1832" onclick="voteFourWay('election1832', 'John Floyd', 'JF1832', 'AJ1832', 'HC1832', 'WW1832', 'Nullifier', 9)">John Floyd</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1832">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Andrew Jackson✔️</th>
+            <td>219</td>
+          <td>701,780</td>
+          <td id="votesAJ1832"></td>
+        </tr>
+        <tr>
+            <th>Henry Clay</th>
+            <td>49</td>
+          <td>484,205</td>
+          <td id="votesHC1832"></td>
+        </tr>
+        <tr>
+            <th>William Wirt</th>
+            <td>7</td>
+          <td>100,715</td>
+          <td id="votesWW1832"></td>
+        </tr>
+        <tr>
+          <th>John Floyd</th>
+          <td>11</td>
+        <td>-</td>
+        <td id="votesJF1832"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1836</p>
+      <div id = electionof1836>
+      <button id="MVB1836" onclick="voteFiveWay('election1836', 'Martin Van Buren', 'MVB1836', 'WHH1836', 'HW1836', 'DW1836', 'WM1836', 'Democrat', 10)">Martin Van Buren</button>
+      <button id="WHH1836" onclick="voteFiveWay('election1836', 'William Henry Harrison', 'WHH1836', 'HW1836', 'DW1836', 'WM1836', 'MVB1836', 'Whig', 10)">William H. Harrison</button>
+      <button id="HW1836" onclick="voteFiveWay('election1836', 'Hugh White', 'HW1836', 'DW1836', 'WM1836', 'MVB1836', 'WHH1836', 10)">Hugh L. White</button>
+      <button id="DW1836" onclick="voteFiveWay('election1836', 'Daniel Webster', 'DW1836', 'WM1836', 'MVB1836', 'WHH1836', 'HW1836',  'Whig', 10)">Daniel Webster</button>
+      <button id="WM1836" onclick="voteFiveWay('election1836', 'Wilie Magnum', 'WM1836', 'MVB1836', 'WHH1836', 'HW1836','DW1836', 'Whig', 10)">Willie Magnum</button>
+  
+    <p id = "space"></p>
+      <table cellspacing="0" id="1836">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Martin Van Buren✔️</th>
+            <td>170</td>
+          <td>764,176</td>
+          <td id="votesMVB1836"></td>
+        </tr>
+        <tr>
+              <th>William H. Harrison</th>
+              <td>73</td>
+            <td>550,816</td>
+            <td id="votesWHH1836"></td>
+          </tr>
+          <tr>
+            <th>Hugh L. White</th>
+            <td>26</td>
+          <td>146,109</td>
+          <td id="votesHW1836"></td>
+        </tr>
+        <tr>
+          <th>Daniel Webster</th>
+          <td>14</td>
+        <td>41,201</td>
+        <td id="votesDW1836"></td>
+      </tr>
+      <tr>
+        <th>Willie Magnum</th>
+        <td>11</td>
+      <td>-</td>
+      <td id="votesWM1836"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1840</p>
+      <div id = electionof1840>
+      <button id="WHH1840" title='"Tippecanoe and Tyler Too"' onclick="voteTwoWay('election1840', 'William Henry Harrison', 'WHH1840', 'MVB1840', 'Whig', 11)">William H. Harrison</button>
+      <button id="MVB1840" onclick="voteTwoWay('election1840', 'Martin Van Buren', 'MVB1840', 'WHH1840', 'Democrat', 11)">Martin Van Buren</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1840">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>William Henry Harrison✔️</th>
+            <td>234</td>
+          <td>1,275,016</td>
+          <td id="votesWHH1840"></td>
+        </tr>
+        <tr>
+            <th>Martin Van Buren</th>
+            <td>60</td>
+          <td>1,129,102</td>
+          <td id="votesMVB1840"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1844</p>
+      <div id = electionof1844>
+      <button id="JP1844" title='"54-40 or fight"' onclick="voteTwoWay('election1844', 'James K. Polk', 'JP1844', 'HC1844', 'Democrat', 12)">James K. Polk</button>
+      <button id="HC1844" onclick="voteTwoWay('election1844', 'Henry Clay', 'HC1844', 'JP1844', 'Whig', 12)">Henry Clay</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1844">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James K. Polk✔️</th>
+            <td>170</td>
+          <td>1,337,243</td>
+          <td id="votesJP1844"></td>
+        </tr>
+        <tr>
+            <th>Henry Clay</th>
+            <td>105</td>
+          <td>1,299,062</td>
+          <td id="votesHC1844"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1848</p>
+      <div id = electionof1848>
+      <button id="ZT1848" title='"For President of the People"' onclick="voteThreeWay('election1848', 'Zachary Taylor', 'ZT1848', 'LC1848', 'MVB1848', 'Whig', 13)">Zachary Taylor</button>
+      <button id="LC1848" title='"The Sub Treasury and the Tariff of 46"' onclick="voteThreeWay('election1848', 'Lewis Cass', 'LC1848', 'ZT1848', 'MVB1848', 'Democrat', 13)">Lewis Cass</button>
+      <button id="MVB1848" onclick="voteThreeWay('election1848', 'Martin Van Buren', 'MVB1848', 'LC1848', 'ZT1848', 'Free Soil', 13)">Martin Van Buren</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1848">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Zachary Taylor✔️</th>
+            <td>163</td>
+          <td>1,360,099</td>
+          <td id="votesZT1848"></td>
+        </tr>
+        <tr>
+            <th>Lewis Cass</th>
+            <td>127</td>
+          <td>1,220,544</td>
+          <td id="votesLC1848"></td>
+        </tr>
+        <tr>
+          <th>Martin Van Buren</th>
+          <td>0</td>
+        <td>291,501</td>
+        <td id="votesMVB1848"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1852</p>
+      <div id = electionof1852>
+      <button id="FP1852" title = '"We Polked you in 44, We shall Pierce you in 52"'  onclick="voteThreeWay('election1852', 'Zachary Taylor', 'FP1852', 'WS1852', 'JH1852', 'Democrat', 14)">Franklin Pierce</button>
+      <button id="WS1852" title = '"The Hero of many battles."' onclick="voteThreeWay('election1852', 'Zachary Taylor', 'WS1852', 'FP1852', 'JH1852', 'Whig', 14)">Winfield Scott</button>
+      <button id="JH1852" onclick="voteThreeWay('election1852', 'Zachary Taylor', 'JH1852', 'WS1852', 'FP1852', 'Free Soil', 14)">John Hale</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1852">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Franklin Pierce✔️</th>
+            <td>254</td>
+          <td>1,601,274</td>
+          <td id="votesFP1852"></td>
+        </tr>
+        <tr>
+            <th>Winfield Scott</th>
+            <td>42</td>
+          <td>1,386,580</td>
+          <td id="votesWS1852"></td>
+        </tr>
+        <tr>
+          <th>John Hale</th>
+          <td>0</td>
+        <td>155,210</td>
+        <td id="votesJH1852"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1856</p>
+      <div id = electionof1856>
+      <button id="JB1856" title='"We will Buck em in 56"' onclick="voteThreeWay('election1856', 'James Buchanan', 'JB1856', 'MF1856', 'JF1856', 'Democrat', 15)">James Buchanan</button>
+      <button id="JF1856" title = '"Free Soil, Free Labor, Free Speech, Free Men, Fremont"' onclick="voteThreeWay('election1856', 'John Fremont', 'JF1856', 'JB1856', 'MF1856', 'Republican', 15)">John Frémont</button>
+      <button id="MF1856" onclick="voteThreeWay('election1856', 'Millard Fillmore', 'MF1856', 'JF1856', 'JB1856', 'Know Nothing', 15)">Millard Fillmore</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1856">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James Buchanan✔️</th>
+            <td>174</td>
+          <td>1,836,072</td>
+          <td id="votesJB1856"></td>
+        </tr>
+        <tr>
+            <th>John Frémont</th>
+            <td>114</td>
+          <td>1,386,580</td>
+          <td id="votesJF1856"></td>
+        </tr>
+        <tr>
+          <th>Millard Fillmore</th>
+          <td>8</td>
+        <td>155,210</td>
+        <td id="votesMF1856"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1860</p>
+      <div id = electionof1860>
+      <button id="AL1860" title = '"Honest old Abe"' onclick="voteFourWay('election1860', 'Abraham Lincoln', 'AL1860', 'SD1860', 'JBRIDGE1860', 'JBELL1860', 'Republican', 16)">Abraham Lincoln</button>
+      <button id="SD1860" title = '"True to the Union and the Constitution to the last."' onclick="voteFourWay('election1860', 'Stephan Douglas', 'SD1860', 'AL1860', 'JBRIDGE1860', 'JBELL1860', 'Democrat', 16)">Stephan Douglas</button>
+      <button id="JBRIDGE1860" onclick="voteFourWay('election1860', 'John Breckinridge', 'JBRIDGE1860', 'AL1860', 'SD1860', 'JBELL1860', 'Democrat', 16)">John Breckinridge</button>
+      <button id="JBELL1860" title = '"The Union and the Constitution"' onclick="voteFourWay('election1860', 'John Bell', 'JBELL1860', 'JBRIDGE1860', 'SD1860', 'AL1860', 'Constitutional Union', 16)">John Bell</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1860">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Abraham Lincoln✔️</th>
+            <td>180</td>
+          <td>1,865,908</td>
+          <td id="votesAL1860"></td>
+        </tr>
+        <tr>
+            <th>Stephan Douglas</th>
+            <td>12</td>
+          <td>1,380,202</td>
+          <td id="votesSD1860"></td>
+        </tr>
+        <tr>
+            <th>John Breckinridge</th>
+            <td>72</td>
+          <td>848,019</td>
+          <td id="votesJBRIDGE1860"></td>
+        </tr>
+        <tr>
+          <th>John Bell</th>
+          <td>39</td>
+        <td>590,901</td>
+        <td id="votesJBELL1860"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1864</p>
+      <div id = electionof1864>
+      <button id="AL1864" title = '"Union, liberty, peace"' onclick="voteTwoWay('election1864', 'Abraham Lincoln', 'AL1864', 'GM1864', 'Republican', 17)">Abraham Lincoln</button>
+      <button id="GM1864" title = '"An honorable, permanent and happy peace."' onclick="voteTwoWay('election1864', 'George McClellan', 'GM1864', 'AL1864', 'Democrat', 17)">George McClellan</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1864">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Abraham Lincoln✔️</th>
+            <td>212</td>
+          <td>2,218,388</td>
+          <td id="votesAL1864"></td>
+        </tr>
+        <tr>
+            <th>George McClellan</th>
+            <td>21</td>
+          <td>1,812,807</td>
+          <td id="votesGM1864"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1868</p>
+      <div id = electionof1868>
+      <button id="UG1868" title = '"Let Us Have Peace"' onclick="voteTwoWay('election1868', 'Ulysses S. Grant', 'UG1868', 'HS1868', 'Republican', 18)">Ulysses S. Grant</button>
+      <button id="HS1868" title = '"Peace, Union, and constitutional government."' onclick="voteTwoWay('election1868', 'Horatio Seymour', 'HS1868', 'UG1868', 'Democrat', 18)">Horatio Seymour</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1868">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Ulysses S. Grant✔️</th>
+            <td>214</td>
+          <td>3,013,421</td>
+          <td id="votesUG1868"></td>
+        </tr>
+        <tr>
+            <th>Horatio Seymour</th>
+            <td>80</td>
+          <td>2,706,829</td>
+          <td id="votesHS1868"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1872</p>
+      <div id = electionof1872>
+      <button id="UG1872" title = '"Grant Us Another Term"' onclick="voteTwoWay('election1872', 'Ulysses S. Grant', 'UG1872', 'HG1872', 'Republican', 19)">Ulysses S. Grant</button>
+      <button id="HG1872" title = '"Turn the Rascals Out"' onclick="voteTwoWay('election1872', 'Horace Greeley', 'HG1872', 'UG1872', 'Liberal Republican', 19)">Horace Greeley</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1872">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Ulysses S. Grant✔️</th>
+            <td>286</td>
+          <td>3,598,235</td>
+          <td id="votesUG1872"></td>
+        </tr>
+        <tr>
+            <th>Horace Greeley</th>
+            <td>0</td>
+          <td>2,834,761</td>
+          <td id="votesHG1872"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1876</p>
+      <div id = electionof1876>
+      <button id="RH1876" title = '"Hayes the true and Wheeler too"' onclick="voteTwoWay('election1876', 'Rutherford B. Hayes', 'RH1876', 'ST1876', 'Republican', 20)">Rutherford B. Hayes</button>
+      <button id="ST1876" title = '"Tilden and Reform"' onclick="voteTwoWay('election1876', 'Samuel Tilden', 'ST1876', 'RH1876', 'Democrat', 20)">Samuel Tilden</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1876">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Rutherford B. Hayes✔️</th>
+            <td>185</td>
+          <td>4,034,142</td>
+          <td id="votesRH1876"></td>
+        </tr>
+        <tr>
+            <th>Samuel Tilden</th>
+            <td>184</td>
+          <td>4,286,808</td>
+          <td id="votesST1876"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1880</p>
+      <div id = electionof1880>
+      <button id="JG1880" onclick="voteTwoWay('election1880', 'James A. Garfield', 'JG1880', 'WSH1880', 'Democrat', 21)">James A. Garfield</button>
+      <button id="WSH1880" onclick="voteTwoWay('election1880', 'Winfield Scott Handcock', 'WSH1880', 'JG1880', 'Republican', 21)">Winfield Scott Handcock</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1880">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>James A. Garfield✔️</th>
+            <td>214</td>
+          <td>4,446,158</td>
+          <td id="votesJG1880"></td>
+        </tr>
+        <tr>
+            <th>Winfield S. Handcock</th>
+            <td>155</td>
+          <td>4,444,260</td>
+          <td id="votesWSH1880"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1884</p>
+      <div id = electionof1884>
+      <button id="GC1884" title = '"Blaine, Blaine, James G. Blaine! The continental liar from the state of Maine!"' onclick="voteTwoWay('election1884', 'Grover Cleveland', 'GC1884', 'JB1884', 'Democrat', 22)">Grover Cleveland</button>
+      <button id="JB1884" title = '"Ma, Ma, where is my Pa?"' onclick="voteTwoWay('election1884', 'James Blaine', 'JB1884', 'GC1884', 'Republican', 22)">James Blaine</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1884">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Grover Cleveland✔️</th>
+            <td>219</td>
+          <td>4,914,482</td>
+          <td id="votesGC1884"></td>
+        </tr>
+        <tr>
+            <th>James Blaine</th>
+            <td>182</td>
+          <td>4,856,905</td>
+          <td id="votesJB1884"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1888</p>
+      <div id = electionof1888>
+      <button id="BH1888"  title = '"Rejuvenated Republicanism"' onclick="voteTwoWay('election1888', 'Benjamin Harrison', 'BH1888', 'GC1888', 'Republican', 23)">Benjamin Harrison</button>
+      <button id="GC1888" title = '"Unnecessary taxation oppresses industry."' onclick="voteTwoWay('election1888', 'Grover Cleveland', 'GC1888', 'BH1888', 'Democrat', 23)">Grover Cleveland</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1888">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Benjamin Harrison✔️</th>
+            <td>223</td>
+          <td>5,443,892</td>
+          <td id="votesBH1888"></td>
+        </tr>
+        <tr>
+            <th>Grover Cleveland</th>
+            <td>168</td>
+          <td>5,534,488</td>
+          <td id="votesGC1888"></td>
+        </tr>
+      </table>
+      </div>
+      <p>1892</p>
+      <div id = electionof1892>
+      <button id="GC1892" title = '"Our choice: Cleve and Steve."' onclick="voteThreeWay('election1892', 'Grover Cleveland', 'GC1892', 'BH1892', 'JW1892', 'Democrat', 24)">Grover Cleveland</button>
+      <button id="BH1892" title = '"Tariff Reform"' onclick="voteThreeWay('election1892', 'Benjamin Harrison', 'BH1892', 'JW1892', 'GC1892', 'Republican', 24)">Benjamin Harrison</button>  
+      <button id="JW1892" onclick="voteThreeWay('election1892', 'James Weaver', 'JW1892', 'BH1892', 'GC1892', 'Populist', 24)">James Weaver</button>
+    <p id = "space"></p>
+      <table cellspacing="0" id="1892">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>Grover Cleveland✔️</th>
+            <td>227</td>
+          <td>5,556,918</td>
+          <td id="votesGC1892"></td>
+        </tr>
+        <tr>
+            <th>Benjamin Harrison</th>
+            <td>145</td>
+          <td>5,176,108</td>
+          <td id="votesBH1892"></td>
+        </tr>
+        <tr>
+          <th>James Weaver</th>
+          <td>22</td>
+        <td>1,041,028</td>
+        <td id="votesJW1892"></td>
+      </tr>
+      </table>
+      </div>
+      <p>1896</p>
+      <div id = electionof1896>
+      <button id="WM1896" title = '"Patriotism, Protection, and Prosperity"' onclick="voteTwoWay('election1896', 'William McKinley', 'WM1896', 'WJB1896', 'Republican', 25)">William McKinley</button>
+      <button id="WJB1896" title = '"No Cross of Gold, No Crown of Thorns."' onclick="voteTwoWay('election1896', 'William Jennings Bryan', 'WJB1896', 'WM1896', 'Democrat', 25)">William Jennings Bryan</button>  
+    <p id = "space"></p>
+      <table cellspacing="0" id="1896">
+        <tr>
+            <th>Candidate</th>
+          <th>Electoral</th>
+          <th>Popular</th>
+          <th>Your Votes</th>
+        </tr>
+        <tr>
+            <th>William McKinley✔️</th>
+            <td>271</td>
+          <td>7,112,138</td>
+          <td id="votesWM1896"></td>
+        </tr>
+        <tr>
+            <th>William J. Bryan</th>
+            <td>176</td>
+          <td>6,510,807</td>
+          <td id="votesWJB1896"></td>
+        </tr>
+      </table>
+      </div>
+  </div>
+
+  
+  <div class="head">
+    <div id="key">
+      <p style="font: Sans-Serif; font-weight: bold;">-Color Coded Parties-</p>
+      <p2 style="background-color:#db5757; color: #ffc9c9; font-weight: bold; font: Sans-Serif;"> Democratic-Republican</p2>
+      <br>
+      <p3 style="background-color:#141414; color: #b6b6b6; font-weight: bold; font: Sans-Serif;"> Federalist</p3>
+      <br>
+      <p4 style="background-color:#fc956d; color: rgb(252, 241, 241); font-weight: bold; font: Sans-Serif;"> National Republican</p4>
+      <br>
+      <p4 style="background-color:#2440e4; color: #c4cdff; font-weight: bold; font: Sans-Serif;"> Democrat</p4>
+      <br>
+      <p5 style="background-color:#df3939; color: #ffc2c2; font-weight: bold; font: Sans-Serif;"> Republican</p5>
+      <br>
+      <p6 style="background-color:#ec8129; color: #ffdbbd; font-weight: bold; font: Sans-Serif;"> Whig</p6>
+      <br>
+      <p7 style="background-color:#aa810f; color: #e7d9b3; font-weight: bold; font: Sans-Serif;"> Anti-Masonic</p7>
+      <br>
+      <p8 style="background-color:#1f99d1; color: #174053; font-weight: bold; font: Sans-Serif;"> Nullifier</p8>
+      <br>
+      <p17 style="background-color:#7f9227; color: #d6e29b; font-weight: bold; font: Sans-Serif;"> Free Soil</p17>
+      <br>
+      <p9 style="background-color:#814c37; color: #f7b095; font-weight: bold; font: Sans-Serif;"> Know Nothing</p9>
+      <br>
+      <p9 style="background-color:#7e8564; color: rgb(223, 224, 164); font-weight: bold; font: Sans-Serif;"> Southern Democrat</p9>
+      <br>
+      <p10 style="background-color:#4b4136; color: #ffd8ab; font-weight: bold; font: Sans-Serif;"> Constitutional Union</p10>
+      <br>
+      <p17 style="background-color:#dc4fe9; color: #511057; font-weight: bold; font: Sans-Serif;"> Liberal Republican</p17>
+      <br>
+      <p13 style="background-color:#2b5e24; color: #8be2ac; font-weight: bold; font: Sans-Serif;"> Populist</p13>
+      <br>
+      <p11 style="background-color:#54926c; color: #132b1c; font-weight: bold; font: Sans-Serif;"> Progressive</p11>
+      <br>
+      <p12 style="background-color:#665329; color: #e0c58a; font-weight: bold; font: Sans-Serif;"> Socialist</p12>
+      <br>
+      <p16 style="background-color:#888888; color: rgb(41, 41, 41); font-weight: bold; font: Sans-Serif;"> Dixiecrat</p16>
+      <br>
+      <p15 style="background-color:#611f58; color: #db96d2; font-weight: bold; font: Sans-Serif;"> American Independent</p15>
+      <br>
+      <p14 style="background-color:#aaa012; color: #fffbbd; font-weight: bold; font: Sans-Serif;"> Independent</p14>
+      <br>
+      <p17 style="background-color:#1b0c3f; color: #b8a0f0; font-weight: bold; font: Sans-Serif;"> Reform</p17>
+      <br>
+      <p17 style="background-color:#00a738; color: #ffffff; font-weight: bold; font: Sans-Serif;"> Green</p17>
+      <br>
+      <p17 style="background-color:#3d4fa1; color: #ccd5ff; font-weight: bold; font: Sans-Serif;"> Libertarian</p17>
+      <br>
+      <p style="font: Sans-Serif; font-weight: bold;">-Statistics-</p>
+      <p id="party">Your Dominant Party: </p>
+      <p id="voted">Times Voted Correctly: </p>
+      
+  </div>
+  </div>
+    <a class = "nav1" href="/1900">1900 - 1996 >></a>
+    <a class = "nav2" href="/2000"><< 2000 - 2020</a>
+    <a class = "nav3" href="/home">Main Page!</a>
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,412 @@
+#elections{
+    text-align: center;
+    bottom: 100%;
+    line-height: 1;
+}
+#key{
+    position: fixed;
+    top: 0;
+    margin-left: 1%;
+    padding: 0px;
+    width: 20%;
+    font-size: 50;
+    z-index: 1000;
+}
+
+
+
+#intro{
+    text-align: center;
+    margin-left: 0%;
+    font-size: 50;
+    font-weight: bold;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin: auto;
+  }
+
+.nav1{
+    background-color:#e06666;
+    position: fixed;
+    bottom: 0;
+    font-size: 500;
+    z-index: 1000;
+    right: 0;
+}
+.nav2{
+    background-color:#6f81e7;
+    position: fixed;
+    bottom: 0;
+    font-size: 500;
+    z-index: 1000;
+    left: 0;
+}
+
+.nav3{
+    background-color:#8bdf53;
+    position: fixed;
+    top: 0;
+    font-size: 500;
+    z-index: 1000;
+    right: 0;
+}
+.pic1{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.pic2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.nav2:hover .pic2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+}
+.nav1:hover .pic1{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    visibility: visible;
+}
+
+
+
+
+
+#TJ1796, #TJ1800, #TJ1804, #JM1808, #JM1812, #JM1816, #RK1816, #JQ1820, #JM1820, #JQ1824, #HC1824, #AJ1824, #WC1824, #AB1800{
+    background-color: #db5757;
+    border-color: #db5757;
+    border-radius: 5%;
+    color: #dadada;
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+    z-index: 950;
+
+}
+
+#JA1796, #CP1804, #CP1808, #DC1812, #JA1800{
+    background-color: #141414;
+    border-color: #141414;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+ 
+    z-index: 950;
+}
+
+
+#JQ1828, #HC1832, #JF1856, #AL1860, #AL1864, #UG1868, #UG1872, #RH1876, #JG1880, #JB1884, #BH1888, #BH1892, #WM1896, #WM1900, #TR1904, #WT1908, #WT1912, #CEH1916, #WH1920, #CC1924, #HH1928, #HH1932, #AL1936, #WW1940, #TD1944, #TD1948, #DE1952, #DE1956, #RN1960, #BG1964, #RN1968, #RN1972, #GF1976, #RR1980, #RR1984, #GB1988, #GB1992, #BD1996, #GB2000, #GB2004, #JM2008, #MR2012, #DT2016, #DT2020{
+    background-color: #df3939;
+    border-color: #df3939;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+
+}
+
+#AJ1828, #AJ1832, #MVB1836, #MVB1840, #JP1844, #LC1848, #FP1852, #JB1856,  #SD1860, #GM1864, #HS1868, #ST1876, #WSH1880, #GC1884, #GC1888, #GC1892, #WJB1896, #WJB1900, #AP1904, #WJB1908, #WW1912, #WW1916, #JC1920, #JD1924, #AS1928, #FDR1932, #FDR1936, #FDR1940, #FDR1944, #HT1948, #AS1952, #AS1956, #JFK1960, #LBJ1964, #HH1968, #GM1972, #JC1976, #JC1980, #WM1984, #MD1988, #BC1992, #BC1996, #AG2000, #JK2004, #BO2008, #BO2012, #HC2016, #JB2020{
+    background-color: #2440e4;
+    border-color: #2440e4;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+
+}
+
+#JF1832{
+    background-color: #1f99d1;
+    border-color: #1f99d1;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+
+}
+
+#WW1832{
+    background-color: #aa810f;
+    border-color: #aa810f;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+
+}
+
+#WP1836, #WHH1840, #HC1844, #ZT1848, #WS1852, #WHH1836, #HW1836, #WM1836, #DW1836{
+    background-color: #ec8129;
+    border-color: #ec8129;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+
+}
+
+#MVB1848, #JH1852{
+    background-color: #7f9227;
+    border-color: #7f9227;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#MF1856{
+    background-color: #814c37;
+    border-color: #814c37;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#JBELL1860{
+    background-color: #db7f15;
+    border-color: #db7f15;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#HG1872{
+    background-color: #dc4fe9;
+    border-color: #dc4fe9;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#JW1892{
+    background-color: #2b5e24;
+    border-color: #2b5e24;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#ED1912{
+    background-color: #665329;
+    border-color: #665329;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#TR1912, #RF1924{
+    background-color: #54926c;
+    border-color: #54926c;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#ST1948{
+    background-color: #888888;
+    border-color: #888888;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#JA1980{
+    background-color: #aaa012;
+    border-color: #aaa012;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#GW1968{
+    background-color: #611f58;
+    border-color: #611f58;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#GW1968{
+    background-color: #611f58;
+    border-color: #611f58;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#RP1992, #RP1996, #RN2000{
+    background-color: #1b0c3f;
+    border-color: #1b0c3f;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#GJ2016, #JJ2020{
+    background-color: #3d4fa1;
+    border-color: #3d4fa1;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#JS2016, #RN2004{
+    background-color: #00a738;
+    border-color: #00a738;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#HC1832, #JQ1828{
+    background-color: #fc895b;
+    border-color: #fc895b;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
+
+#JBRIDGE1860{
+    background-color: #7e8564;
+    border-color: #7e8564;
+    border-radius: 5%;
+    color: rgb(218, 218, 218);
+    padding: 6px 3px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+ 
+}
